@@ -111,3 +111,17 @@ exercises.c:79:10: error: ‘vector1’ is a pointer; did you mean to use ‘->�
       |          ->
 Compilation failed
 4f271d8
+Sat 11 Mar 2023 06:57:16 AM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:77:18: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   77 |   vector1->datos = (Vector *) realloc(vector1->datos, (n+1)*sizeof(Vector));
+      |                  ^
+exercises.c:76:18: error: ‘vector1’ is used uninitialized [-Werror=uninitialized]
+   76 |   vector1->datos = NULL;
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+e59997c

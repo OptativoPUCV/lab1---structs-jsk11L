@@ -73,10 +73,10 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *vector1;
-  vector1.datos = NULL;
-  vector1.datos = (Vector *) realloc(vector1.datos, (n+1)*sizeof(Vector));
-  if(vector1.datos == NULL) exit(EXIT_FAILURE);
-  vector1.capacidad = n;
+  vector1->datos = NULL;
+  vector1->datos = (Vector *) realloc(vector1->datos, (n+1)*sizeof(Vector));
+  if(vector1->datos == NULL) exit(EXIT_FAILURE);
+  vector1->capacidad = n;
   return vector1;
 }
 
