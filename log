@@ -136,3 +136,14 @@ exercises.c:76:18: error: ‘vector1’ is used uninitialized [-Werror=uninitial
 cc1: all warnings being treated as errors
 Compilation failed
 3a8c515
+Sat 11 Mar 2023 06:57:55 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:76:43: error: ‘vector1’ is used uninitialized [-Werror=uninitialized]
+   76 |   vector1->datos = (int *) realloc(vector1->datos, (n+1)*sizeof(int));
+      |                                    ~~~~~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a1c9c94
