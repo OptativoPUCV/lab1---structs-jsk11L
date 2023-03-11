@@ -125,3 +125,14 @@ exercises.c:76:18: error: ‘vector1’ is used uninitialized [-Werror=uninitial
 cc1: all warnings being treated as errors
 Compilation failed
 e59997c
+Sat 11 Mar 2023 06:57:45 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘crearVector’:
+exercises.c:76:18: error: ‘vector1’ is used uninitialized [-Werror=uninitialized]
+   76 |   vector1->datos = NULL;
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+3a8c515
