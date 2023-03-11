@@ -75,7 +75,7 @@ Vector * crearVector(int n) {
   Vector *vector1 = NULL;
   vector1 = (Vector *) realloc(vector1, (n+1)*sizeof(Vector));
   if(vector1 == NULL) exit(EXIT_FAILURE);
-   return NULL;
+   return vector1;
 }
 
 /*
