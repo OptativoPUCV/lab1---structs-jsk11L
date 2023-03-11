@@ -24,3 +24,22 @@ Sat 11 Mar 2023 06:48:13 AM UTC:
  tests:  2|5
 total_score: 20/70
 b7a2cd7
+Sat 11 Mar 2023 06:51:28 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:55:12: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   55 |    strcpy(p.nombre,nombre);
+      |            ^
+      |            ->
+exercises.c:56:12: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   56 |    strcpy(p.rut,rut);
+      |            ^
+      |            ->
+exercises.c:57:5: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   57 |    p.edad = edad;
+      |     ^
+      |     ->
+Compilation failed
+3f6e71e
