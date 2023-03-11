@@ -67,3 +67,20 @@ Sat 11 Mar 2023 06:55:19 AM UTC:
  tests:  3|4
 total_score: 30/70
 5d3fe0b
+Sat 11 Mar 2023 06:56:34 AM UTC: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:77:17: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   77 |   vector1.datos = (Vector *) realloc(vector1.datos, (n+1)*sizeof(Vector));
+      |                 ^
+exercises.c:80:10: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   80 |   return vector1;
+      |          ^~~~~~~
+exercises.c:81:1: error: control reaches end of non-void function [-Werror=return-type]
+   81 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1efd69f
