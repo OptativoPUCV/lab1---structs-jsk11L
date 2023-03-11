@@ -28,8 +28,8 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     int minimo = 0, maximo = 0;
   
     for(int i = 0; i < n; i++){
-      if(minimo == 0 || minimo > a[n]) minimo = a[n];
-      if(maximo == 0 || maximo < a[n]) maximo = a[n];
+      if(minimo == 0 || minimo > a[i]) minimo = a[i];
+      if(maximo == 0 || maximo < a[i]) maximo = a[i];
     }
     *max = maximo;
     *min = minimo;
