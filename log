@@ -211,3 +211,15 @@ Sat 11 Mar 2023 07:09:47 AM UTC:
  tests:  6|2
 total_score: 50/70
 b5c1fe3
+Sat 11 Mar 2023 07:11:14 AM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:108:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  108 |     c[i] = a[i] + b[i];
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+Compilation failed
+2016920
