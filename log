@@ -163,3 +163,17 @@ exercises.c:77:43: error: ‘*vector1.datos’ is used uninitialized [-Werror=un
 cc1: all warnings being treated as errors
 Compilation failed
 4ee0326
+Sat 11 Mar 2023 07:01:25 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:77:28: error: too few arguments to function ‘calloc’
+   77 |   vector1->datos = (int *) calloc((n+1) * sizeof(int));
+      |                            ^~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:543:14: note: declared here
+  543 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+61884c7
