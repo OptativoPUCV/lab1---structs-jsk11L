@@ -84,3 +84,30 @@ exercises.c:81:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1efd69f
+Sat 11 Mar 2023 06:57:01 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:76:10: error: ‘vector1’ is a pointer; did you mean to use ‘->’?
+   76 |   vector1.datos = NULL;
+      |          ^
+      |          ->
+exercises.c:77:10: error: ‘vector1’ is a pointer; did you mean to use ‘->’?
+   77 |   vector1.datos = (Vector *) realloc(vector1.datos, (n+1)*sizeof(Vector));
+      |          ^
+      |          ->
+exercises.c:77:45: error: ‘vector1’ is a pointer; did you mean to use ‘->’?
+   77 |   vector1.datos = (Vector *) realloc(vector1.datos, (n+1)*sizeof(Vector));
+      |                                             ^
+      |                                             ->
+exercises.c:78:13: error: ‘vector1’ is a pointer; did you mean to use ‘->’?
+   78 |   if(vector1.datos == NULL) exit(EXIT_FAILURE);
+      |             ^
+      |             ->
+exercises.c:79:10: error: ‘vector1’ is a pointer; did you mean to use ‘->’?
+   79 |   vector1.capacidad = n;
+      |          ^
+      |          ->
+Compilation failed
+4f271d8
